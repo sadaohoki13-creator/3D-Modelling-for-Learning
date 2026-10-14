@@ -1,0 +1,39 @@
+{
+  "name": "taarzan-vehicle-visualization-research",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config apps/showcase/vite.config.js",
+    "build": "vite build --config apps/showcase/vite.config.js",
+    "preview": "vite preview --config apps/showcase/vite.config.js",
+    "test": "node --test tests/unit/*.test.js",
+    "test:smoke": "node tests/e2e/smoke.mjs",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "examples": "node scripts/teaching-examples.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run verify:assets && npm test && npm run build"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lucide": "^0.468.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@playwright/test": "^1.55.0",
+    "@sparticuz/chromium": "^133.0.0",
+    "prettier": "^3.9.10",
+    "vite": "^7.1.0"
+  },
+  "description": "Research-oriented vehicle visualization and analytical teaching models, demonstrated through an interactive Taarzan showroom.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sadaohoki13-creator/Arena-Taarzan.git"
+  }
+}

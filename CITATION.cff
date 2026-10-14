@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: 'Please cite this repository when referring to its prototype, methodology or teaching materials. Citation does not grant reuse rights.'
+title: 'Vehicle Visualization Research: Taarzan Interactive Demonstrator'
+type: software
+version: 0.2.0
+authors:
+  - name: 'Arena-Taarzan project contributors'
+repository-code: 'https://github.com/sadaohoki13-creator/Arena-Taarzan'
+url: 'https://github.com/sadaohoki13-creator/Arena-Taarzan'
+abstract: 'A research-oriented browser visualization prototype and independent SI-unit teaching models for advanced automotive education. No physical or classroom efficacy validation is claimed.'
+keywords:
+  - automotive education
+  - interactive visualization
+  - procedural geometry
+  - vehicle mechanics
+  - research prototype

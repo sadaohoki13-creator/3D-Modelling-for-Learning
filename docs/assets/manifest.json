@@ -1,0 +1,131 @@
+{
+  "repository": "sadaohoki13-creator/Arena-Taarzan",
+  "sourceCommit": "ad89ebdb060e0082e3cf236f3aed3a6a4bd6fe85",
+  "assets": [
+    {
+      "path": "apps/showcase/public/references/canopy-interior-detail.png",
+      "url": "/references/canopy-interior-detail.png",
+      "originalName": "Closeup from Left of the Rear Upper glass window section, silver handle like bar and peak into interior.png",
+      "gitBlob": "a46a31916037f3240acb63c097293bc6260e7885",
+      "sha256": "7b434845d18f5804aadf79bc0cbaef3728d3be173349a56434bdb0dcc8981cde",
+      "bytes": 1414265,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/front-left-studio.jpg",
+      "url": "/references/front-left-studio.jpg",
+      "originalName": "Front Left Diagonal 2.jpg",
+      "gitBlob": "d317871887fad3e18e13e809e47b9994f85689a9",
+      "sha256": "e1f652c3dba16eb027d9b51eb5ad44b88fb2c238128e09ac5482a2fd15750b38",
+      "bytes": 34325,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/front-left.jpg",
+      "url": "/references/front-left.jpg",
+      "originalName": "Front Left Diagonal.jpg",
+      "gitBlob": "19b8d76c4a78b00c8ac0a181e94af74652896b61",
+      "sha256": "6aba48acf7fa1d930958578e8a148d24409d03eaa2306c3eacd111e561a44190",
+      "bytes": 26724,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/front-right-alternate.jpg",
+      "url": "/references/front-right-alternate.jpg",
+      "originalName": "Front Right Diagonal 2.jpg",
+      "gitBlob": "400e4ab379af4a869b50ad25d903ca21a9c447fd",
+      "sha256": "204c8d3f7c894a5f3554482ad2b31db090237718345dbee2846d88aff59ac26b",
+      "bytes": 114353,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/front-right.jpg",
+      "url": "/references/front-right.jpg",
+      "originalName": "Front Right Diagonal.jpg",
+      "gitBlob": "c9099c46d3732cedc13b63435a367b054f46310a",
+      "sha256": "fff6cd494d5430b31a6fb3ccf5415cb3ad647ce0e3462d808f0c5a90ba6b4b4c",
+      "bytes": 532602,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/left-profile.jpg",
+      "url": "/references/left-profile.jpg",
+      "originalName": "Left Profile.jpg",
+      "gitBlob": "4891f4699ee60830531f66140c9463ee0719009b",
+      "sha256": "274e397a2abb53fad21a903e2d3dd7c2d9fcc3561d92afab9159c81ca20e23e3",
+      "bytes": 27366,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/rear-left.jpg",
+      "url": "/references/rear-left.jpg",
+      "originalName": "Left Rear Diagonal.jpg",
+      "gitBlob": "90081c889dc08e53aeb3d7cfa495d2656f13cd9b",
+      "sha256": "6a222198243a66f36b67212d75ace5ea62caf173de4fbe8dbaed1ead978d14b5",
+      "bytes": 26767,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/headlight-detail.jpg",
+      "url": "/references/headlight-detail.jpg",
+      "originalName": "Left headlight Closeup.jpg",
+      "gitBlob": "3121facfb0ed73ea76649662b1b78ce9ae04dd20",
+      "sha256": "1cfdb5d5e2bb9d0240c54e51e2bd5b5756c6543b31bd945e03d324b3c8c38104",
+      "bytes": 52009,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/rear-open-canopy.png",
+      "url": "/references/rear-open-canopy.png",
+      "originalName": "Rear with doors and rear upper window section open.png",
+      "gitBlob": "878b362b475001a319b8ee16faccb39b5ab38b5b",
+      "sha256": "3115ad3d23dfe22cb0e196bb0710f649043c1416a8c1e01f154590b2f39cfc5c",
+      "bytes": 1361060,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/rear.jpg",
+      "url": "/references/rear.jpg",
+      "originalName": "Rear.jpg",
+      "gitBlob": "f210bd9edcdd3faf774a453a7cd81f3eb53b7768",
+      "sha256": "044c4c4a7b58399253672b6cdce139856212699b03d583ac2c078dc7c7c4e610",
+      "bytes": 52385,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/references/rear-right-open-canopy.png",
+      "url": "/references/rear-right-open-canopy.png",
+      "originalName": "Right REAR diagonal view of the rear upper glass window section opened.png",
+      "gitBlob": "0fdc15c71b6608b2dfd3125cabb6c05fa75918f6",
+      "sha256": "7a7a8f93046b40e0cbc4bc6f65b1b12f4e5f68918b5aca79baa3fabc2b8ddb9d",
+      "bytes": 1030895,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/audio/engine-source.m4a",
+      "url": "/audio/engine-source.m4a",
+      "originalName": "Tarzaan startup & Exhaust sound.m4a",
+      "gitBlob": "7feb96f25df638dafe62e5c65645ff371b94266f",
+      "sha256": "840de353c31548291b1ae60c52730914e71f06fcc2cb7c72a95be100ddc61353",
+      "bytes": 348225,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/video/vehicle-reference.mp4",
+      "url": "/video/vehicle-reference.mp4",
+      "originalName": "Video-17431.mp4",
+      "gitBlob": "9e23d51fdbb5c472cb101d6156c1f53c8de3e18a",
+      "sha256": "3b4c1ef5a98fed88a1c1a7cfeb05dc18dd190aa0a67f477ccf9b8fcca8cee3c4",
+      "bytes": 1082488,
+      "kind": "source"
+    },
+    {
+      "path": "apps/showcase/public/audio/engine-compatible.ogg",
+      "url": "/audio/engine-compatible.ogg",
+      "source": "audio/engine-source.m4a",
+      "sha256": "51f7cf3bdbae98642cec64221ceceddd16e45a01b16ef3ad1fc618558b161088",
+      "bytes": 192079,
+      "kind": "derivative"
+    }
+  ]
+}

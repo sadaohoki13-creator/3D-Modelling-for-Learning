@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111315" />
+    <meta
+      name="description"
+      content="A legend, reawakened. Explore Taarzan's 2004 heritage and an imagined 2026 hybrid future in an interactive 3D showroom."
+    />
+    <title>TAARZAN — A legend, reawakened.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141618'/%3E%3Cpath d='M12 16h40v9H37v28H27V25H12z' fill='%23c5f277'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <a class="brand" href="#" aria-label="Taarzan home"
+          ><span class="brand-mark">T</span><span>TAARZAN<small>THE WONDER CAR</small></span></a
+        >
+        <nav aria-label="Showroom navigation">
+          <button class="nav-link active" data-era="heritage">The original <span>2004</span></button
+          ><button class="nav-link" data-era="vision">Vision reborn <span>2026</span></button
+          ><span class="nav-divider"></span
+          ><button class="nav-link" id="story-open">
+            The story <i data-lucide="arrow-up-right"></i>
+          </button>
+        </nav>
+        <div class="live">
+          <span></span> INTERACTIVE SHOWROOM <i data-lucide="move-up-right"></i>
+        </div>
+      </header>
+      <main id="showroom">
+        <div class="background-type" aria-hidden="true">TAARZAN</div>
+        <div class="intro">
+          <div class="eyebrow">
+            <span class="little-line"></span>
+            <span id="era-eyebrow">AN INDIAN ICON. AN UNDYING SPIRIT.</span>
+          </div>
+          <h1 id="headline">A legend.<br /><em>Reawakened.</em></h1>
+          <p id="intro-copy">Not just a car. A feeling that never left.</p>
+        </div>
+        <div class="edition">
+          <span class="edition-label">THE HERITAGE COLLECTION</span>
+          <div id="edition-year">2004<span> / 2026</span></div>
+          <span class="edition-caption" id="edition-caption">DC DESIGN · REIMAGINED IN 3D</span>
+        </div>
+        <div
+          id="scene"
+          aria-label="Interactive 3D Taarzan car. Drag to orbit and scroll to zoom."
+        ></div>
+        <div id="loading"><span class="loader"></span><span>AWAKENING THE LEGEND</span></div>
+        <div id="hotspot-labels"></div>
+        <aside class="environment-panel">
+          <div class="section-label">SET THE SCENE <span>03</span></div>
+          <button class="environment active" data-env="studio">
+            <span class="env-thumb studio"></span
+            ><span>Dark studio<small>THE ORIGINAL ATMOSPHERE</small></span
+            ><span class="radio"></span></button
+          ><button class="environment" data-env="rain">
+            <span class="env-thumb rain"></span><span>Midnight rain<small>AFTER HOURS</small></span
+            ><span class="radio"></span></button
+          ><button class="environment" data-env="light">
+            <span class="env-thumb light"></span
+            ><span>Architectural<small>IN A DIFFERENT LIGHT</small></span
+            ><span class="radio"></span>
+          </button>
+        </aside>
+        <div class="paint-panel">
+          <span class="paint-swatch"></span>
+          <div>Pearlescent violet<small>THE SIGNATURE FINISH</small></div>
+          <span class="paint-code">01 / 01</span>
+        </div>
+        <div class="stage-tools">
+          <button
+            id="rotate"
+            class="icon-button"
+            title="Toggle auto rotation"
+            aria-label="Toggle auto rotation"
+            aria-pressed="false"
+          >
+            <i data-lucide="rotate-3d"></i></button
+          ><button
+            id="hotspots"
+            class="icon-button active"
+            title="Toggle hotspots"
+            aria-label="Toggle hotspots"
+            aria-pressed="true"
+          >
+            <i data-lucide="scan"></i></button
+          ><button id="fullscreen" class="icon-button" title="Fullscreen" aria-label="Fullscreen">
+            <i data-lucide="maximize"></i></button
+          ><span class="tools-divider"></span
+          ><span class="orbit-hint"
+            ><i data-lucide="mouse"></i> DRAG TO EXPLORE <span>·</span> SCROLL TO ZOOM</span
+          >
+        </div>
+        <button id="ghost" class="ghost-button" aria-pressed="false">
+          <i data-lucide="ghost"></i><span>Ghost mode<small>LET THE SPIRIT TAKE OVER</small></span
+          ><span class="toggle"><span></span></span>
+        </button>
+        <div class="camera-strip">
+          <span class="section-label">THE PERSPECTIVES</span>
+          <div class="camera-buttons">
+            <button class="camera active" data-camera="0"><span>01</span> HERO ¾</button
+            ><button class="camera" data-camera="1"><span>02</span> SIDE PROFILE</button
+            ><button class="camera" data-camera="2"><span>03</span> REAR BRIDGE</button
+            ><button class="camera" data-camera="3"><span>04</span> TOP CANOPY</button>
+          </div>
+          <span class="model-note">PROCEDURAL DESIGN STUDY <i data-lucide="info"></i></span>
+        </div>
+      </main>
+      <section class="dashboard" aria-label="Engine controls and specifications">
+        <div class="vehicle-info">
+          <span class="section-label" id="vehicle-label">2004 · THE ORIGINAL</span>
+          <h2 id="vehicle-title">DC Taarzan</h2>
+          <span id="engine-label"
+            >2.0L TURBO INLINE-4 <span class="bullet">/</span> REAR-WHEEL DRIVE</span
+          >
+        </div>
+        <div class="quick-spec">
+          <strong id="power">400<span>BHP</span></strong
+          ><span class="section-label">PURE POWER</span>
+        </div>
+        <div class="quick-spec torque">
+          <strong id="torque">500<span>Nm</span></strong
+          ><span class="section-label" id="torque-label">PEAK TORQUE</span>
+        </div>
+        <div class="engine-console">
+          <div class="tach-top">
+            <span class="section-label"
+              ><span class="status-dot" id="engine-dot"></span
+              ><span id="engine-status">ENGINE OFF</span></span
+            >
+            <div><strong id="rpm">0</strong><span> RPM</span></div>
+          </div>
+          <div class="tach-bars" id="tach-bars"></div>
+          <div class="tach-scale">
+            <span>0</span><span>2</span><span>4</span><span>6</span
+            ><span>8 <small>×1000</small></span>
+          </div>
+        </div>
+        <div class="engine-actions">
+          <button id="ignition" class="ignition">
+            <i data-lucide="power"></i><span>Start ignition</span></button
+          ><button id="rev" class="rev" aria-label="Hold to rev engine">
+            <i data-lucide="audio-lines"></i> HOLD TO REV <kbd>SPACE</kbd>
+          </button>
+        </div>
+        <button id="specs-open" class="specs-button">
+          <i data-lucide="sliders-horizontal"></i><span>Full specs</span
+          ><i data-lucide="arrow-up-right"></i>
+        </button>
+      </section>
+      <footer>
+        <span>BUILT FROM MEMORIES. DRIVEN BY SPIRIT.</span
+        ><span class="audio-credit"
+          ><i data-lucide="volume-2"></i> ORIGINAL ENGINE RECORDING
+          <button id="mute" aria-label="Mute engine sound">SOUND ON</button></span
+        ><span
+          >A TRIBUTE. NOT AN OFFICIAL DC DESIGN PRODUCT. <span class="footer-cross">✳</span></span
+        >
+      </footer>
+    </div>
+    <div id="toast" role="status"></div>
+    <dialog id="hotspot-dialog" class="detail-dialog">
+      <button class="close" aria-label="Close detail"><i data-lucide="x"></i></button
+      ><span class="eyebrow" id="detail-number"></span>
+      <h2 id="detail-title"></h2>
+      <p id="detail-copy"></p>
+      <div class="detail-footer">
+        <span>THE DETAILS THAT MADE A LEGEND</span><i data-lucide="sparkles"></i>
+      </div>
+    </dialog>
+    <dialog id="specs-dialog" class="drawer">
+      <button class="close" aria-label="Close specifications"><i data-lucide="x"></i></button>
+      <div class="eyebrow">TWO ERAS. ONE SOUL.</div>
+      <h2>Beyond the<br /><em>ordinary.</em></h2>
+      <p class="drawer-intro">The original spirit. An imagined electric future.</p>
+      <div class="spec-table">
+        <div class="spec-head">
+          <span>THE BLUEPRINT</span><strong>2004<small>DC TAARZAN</small></strong
+          ><strong>2026<small>VISION HYBRID</small></strong>
+        </div>
+        <div>
+          <span>Powertrain</span><span>2.0L Turbo I4</span
+          ><span>Bespoke 2.0L Turbo I4 + front e-motor</span>
+        </div>
+        <div><span>Combustion</span><span>400 BHP</span><span>460 hp · rear axle</span></div>
+        <div>
+          <span>Electric motor</span><span>—</span
+          ><span>Lucid ultra-compact<br />500 kW / 670 hp</span>
+        </div>
+        <div><span>Combined output</span><span>400 BHP</span><span>960 BHP target</span></div>
+        <div><span>Torque</span><span>500 Nm</span><span>Torque-vectoring AWD</span></div>
+        <div><span>Transmission</span><span>5-speed manual</span><span>Hybrid drive</span></div>
+        <div>
+          <span>Driven wheels</span><span>Rear-wheel drive</span><span>All-wheel drive</span>
+        </div>
+        <div><span>0–100 km/h</span><span>Not specified</span><span>2.15 s target</span></div>
+        <div>
+          <span>Signature</span><span>MH 01 M 37</span><span>Silent stalking · EV mode</span>
+        </div>
+      </div>
+      <button id="silent" class="wide-button">
+        EXPLORE SILENT STALKING <i data-lucide="arrow-right"></i>
+      </button>
+      <p class="disclaimer">
+        Design-brief specifications, not independently verified factory data. The 2026 vehicle is a
+        fictional concept; power and acceleration are design targets. Component peak outputs are not
+        additive.
+      </p>
+    </dialog>
+    <dialog id="story-dialog" class="story-dialog">
+      <button class="close" aria-label="Close story"><i data-lucide="x"></i></button>
+      <div class="eyebrow">THE CAR. THE CINEMA. THE CULT FOLLOWING.</div>
+      <h2>More than metal.<br /><em>A memory in motion.</em></h2>
+      <p>
+        A violet silhouette. A spirit behind the wheel. This independent tribute revisits the car
+        from the 2004 film <em>Taarzan: The Wonder Car</em> and imagines where that unmistakable
+        attitude could go next.
+      </p>
+      <div class="story-gallery">
+        <img
+          src="/references/front-left-studio.jpg"
+          alt="Original violet DC Taarzan front three-quarter reference"
+        /><img src="/references/left-profile.jpg" alt="Taarzan side profile design reference" />
+      </div>
+      <h3>From reference to real-time</h3>
+      <p>
+        This enclosed coupe is modeled procedurally from the repository’s photographs: a cab-forward
+        glass canopy, sculpted side intakes, silver guide struts, and a rear bridge spoiler. It is
+        an artistic reconstruction, not a scanned or factory CAD model.
+      </p>
+      <video controls playsinline preload="metadata" src="/video/vehicle-reference.mp4"></video>
+      <p class="disclaimer">
+        Reference imagery, video, and original engine recording supplied in the project repository.
+        An independent fan-made experience, not affiliated with DC Design or the film’s creators.
+      </p>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
